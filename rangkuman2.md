@@ -1,0 +1,4 @@
+# RANGKUMAN 2
+
+## Bekerja dengan Github
+Bekerja dengan sebuah github dapat dilakukan dengan langkah pertama yaitu sign in ke akun github di "https://github.com". Setelah itu, kita harus memberi nama dari repository terlebih dahulu. Lalu, kita dapat melakukan berbagai hal dengan website tersebut. Kita bisa mulai membuat file suatu proyek di repository yang kita buat, namun kita harus selalu "commit" setiap perubahan pada proyek atau repository yang kita lakukan dengan memberikan keterangan perubahan apa yang dilakukan, tujuannya adalah agar tidak membingungkan pemilik asli dari proyek tersebut. Kita bisa melihat commit yang dilakukan pada repository atau file tersebut berdasarkan fitur "history" atau "commits", dan di fitur "network" pada menu "insights" dapat memperlihatkan kita "commit" yang disimbolkan titik hitam pada proyek yang kita lakukan.
