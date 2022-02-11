@@ -107,6 +107,11 @@ Setelah itu, jika dilihat lagi status dari folder, maka hasilnya sebagai berikut
 Itu artinya file sudah berhasil dimasukkan ke staging area. 
 - Langkah yang sama harus dilakukan apabila kita memodifikasi suatu file dalam repository meskipun sudah di-track sebelumnya, ini disebabkan adanya perubahan yang harus di-add kembali.
 
+Namun, jika kita ingin memindahkan file yang belum di-track ke spacing area, maka gunakan perintah:
+```
+$ git add .
+```
+
 Selanjutnya, setiap perubahan pada folder harus dilakukan "commit". Untuk melakukan "commit", ketikkan berikut.
 ```
 $ git commit -m "<pesan commit>"
