@@ -1,0 +1,4 @@
+# RANGKUMAN 4
+
+## Github: Fork
+Pada dasarnya, "fork" adalah suatu tindakan menduplikasi suatu repository milik akun lain untuk kemudian kita edit, ini berguna jika kita ingin melakukan kontribusi terhadap repository milik orang lain. Kita bisa melihat repository akun lain terlebih dahulu, lalu fork file yang ingin kita edit. Setelah itu, kita bisa melakukan "pull request" kepada akun orang tersebut dan menentukan cabang mana dari akun orang tersebut yang ingin kita tambahkan dari perubahan yang kita lakukan, lalu pemilik akun tersebut dapat melakukan "merge" dari perubahan yang dilakukan pelaku "fork" dan melengkapi repository yang dimiliki.
