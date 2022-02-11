@@ -113,6 +113,24 @@ Contohnya adalah sebagai berikut.
 
 - Pada foto itu, yang berwarna kuning kehitaman adalah "hash" sebagai penanda dari "commit" yang kita lakukan.
 
+Selanjutnya, apabila kita ingin mengetahui jumlah "commit" spesifik untuk suatu file dalam repository, maka ketikkan berikut.
+```
+$ git lof -- <nama file>
+```
+Contohnya sebagai berikut.
+![Screen Shot 2022-02-11 at 18 41 50](https://user-images.githubusercontent.com/99285819/153585641-e408a962-152f-44b7-9e29-62d1913b32c0.png)
+
+Terakhir, kalau misalkan kalian ingin mengembalikan perubahan suatu file pada suatu "commit", maka ketikkan hal berikut.
+```
+$ git checkout <5 kode pertama dari "hash" suatu "commit"> -- <nama file>
+```
+Contohnya misalkan kita mencari tahu daftar commit pada file "tes-git" sebagai berikut.
+![Screen Shot 2022-02-11 at 18 47 35](https://user-images.githubusercontent.com/99285819/153586298-d0c3d3a6-50ca-4758-9c38-9bed7d4ec69d.png)
+
+Lalu, setelah menggunakan perintah tadi, kita ingin mencari tahu keadaan ketika "commit" pertama, maka hasilnya seperti ini.
+![Screen Shot 2022-02-11 at 18 50 25](https://user-images.githubusercontent.com/99285819/153586691-797f4c00-d483-4cf7-8b8a-51ecaae3aeb2.png)
+File pun akan kembali pada keadaan tersebut.
+
 <p>&nbsp;</p>
 
 ## 6) Git Branch & Merge
