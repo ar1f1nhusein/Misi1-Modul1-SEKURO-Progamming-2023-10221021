@@ -97,6 +97,22 @@ $ git commit -m "<pesan commit>"
 Pesan commit harus ditambahkan untuk memberikan keterangan. Hasilnya adalah berikut.
 ![Screen Shot 2022-02-11 at 18 26 21](https://user-images.githubusercontent.com/99285819/153583792-b55010d6-1f5b-4579-9e25-1b650e8ed574.png)
 
+Jika kita ingin melihat semua commit yang telah kita lakukan, maka ketikkan berikut.
+```
+$ git log
+```
+Hasilnya adalah sebagai berikut.
+![Screen Shot 2022-02-11 at 18 31 36](https://user-images.githubusercontent.com/99285819/153584403-ac2b3b8f-b7a3-4cef-a0a5-b589292c571c.png)
+
+Namun, jika kita ingin melihat hanya beberapa "commit" terakhir, maka ketikkan berikut.
+```
+$ git log -<jumlah commit terakhir yang diinginkan>
+```
+Contohnya adalah sebagai berikut.
+![Screen Shot 2022-02-11 at 18 34 35](https://user-images.githubusercontent.com/99285819/153584787-0840825c-b843-444b-83ea-d4248da07852.png)
+
+- Pada foto itu, yang berwarna kuning kehitaman adalah "hash" sebagai penanda dari "commit" yang kita lakukan.
+
 <p>&nbsp;</p>
 
 ## 6) Git Branch & Merge
