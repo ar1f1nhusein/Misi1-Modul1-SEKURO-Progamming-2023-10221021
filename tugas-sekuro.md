@@ -60,7 +60,17 @@ Pada dasarnya, "fork" adalah suatu tindakan menduplikasi suatu repository milik 
 <p>&nbsp;</p>
 
 ## 5) Bekerja dengan Git
-Untuk bekerja dengan git, maka pertama kita harus mengunduh dulu git pada tautan "https://git-scm/com/". Di sini, pertama-tama kita harus mengaktifkan terlebih dahulu github. Maka ketikkan ini pada terminal/gitbash
+Untuk bekerja dengan git, maka pertama kita harus mengunduh dulu git pada tautan "https://git-scm/com/". 
+
+Untuk mengetahui nama user, kita bisa ketikkan
+```
+$ pwd
+```
+Tampilan sebagai berikut.
+![Screen Shot 2022-02-11 at 18 54 35](https://user-images.githubusercontent.com/99285819/153587155-82926b61-ee74-48fe-ab7d-48c9d6af801e.png)
+
+
+Di sini, pertama-tama kita harus mengaktifkan terlebih dahulu github. Maka ketikkan ini pada terminal/gitbash
 
 ```
 $ git init
@@ -70,6 +80,13 @@ Selanjutnya, kita dapat menjadikan sebuah folder menjadi repository. Untuk itu, 
 ```
 $ cd <nama folder>
 ```
+Untuk mengecek ada subfolder/file apa saja dalam suatu folder, maka kita bisa gunakan perintah berikut.
+```
+$ ls
+```
+Hasilnya ditunjukkan sebagai berikut.
+![Screen Shot 2022-02-11 at 18 59 37](https://user-images.githubusercontent.com/99285819/153587989-85d14eb4-fe01-499a-9e74-554bb6da84de.png)
+
 Jika terdapat subfolder dalam folder, maka ketikkan ini pada terminal/gitbash setelah menjalankan perintah di atas
 ```
 $ cd <nama subfolder>
