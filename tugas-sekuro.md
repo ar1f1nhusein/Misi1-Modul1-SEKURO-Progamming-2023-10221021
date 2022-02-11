@@ -74,7 +74,22 @@ Jika terdapat subfolder dalam folder, maka ketikkan ini pada terminal/gitbash se
 ```
 $ cd <nama subfolder>
 ```
-Setelah itu, buka fas
+Setelah itu, buka source code editor, misalkan seperti VS Code untuk membuat proyek. Kita bisa membuat file dalam repository tersebut dan mulai mengeditnya. Untuk mengecek file apa yang kita punya dalam repository tersebut, kita dapat ketikkan ini.
+```
+$  git status
+```
+Hasilnya sebagai berikut.
+![Screen Shot 2022-02-11 at 17 55 53](https://user-images.githubusercontent.com/99285819/153579939-416cbbc7-3c60-4230-a897-a44de0a9bb61.png)
+
+File berwarna merah menunjukkan file yang belum di-track atau dimasukkan ke staging area pada git. Untuk dimasukkan, ketikkan ini pada terminal.
+```
+git add <nama file>
+```
+Setelah itu, jika dilihat lagi status dari folder, maka hasilnya sebagai berikut.
+![Screen Shot 2022-02-11 at 18 01 03](https://user-images.githubusercontent.com/99285819/153580579-b8a9f705-6243-4fba-9054-77037984bdb0.png)
+Itu artinya file sudah berhasil dimasukkan ke staging area. 
+
+Selanjutnya, untuk 
 
 <p>&nbsp;</p>
 
@@ -102,11 +117,16 @@ Maka cabang akan berpindah, dan jika kita lalu melihat seluruh cabang, maka hasi
 
 Lalu, untuk menggabung merge, kita memiliki dua cara yaitu fast forward dan three-way merge. Fast forward dapat terjadi apabila cabang tersebut memiliki jalur langsung dengan cabang yang ingin digabungkan. Sedangkan three-way merge dapat terjadi jika cabang tersebut tidak memiliki jalur langsung dengan cabang yang ingin digabungkan.
 
-Contoh merge fast forward dapat terjadi antara cabang "bagian-1" dengan "master" (Untuk saat ini, posisi saat ini adalah "master"). Ketikkan ini pada terminal:
+Contoh merge fast forward dapat terjadi antara cabang "bagian-1" dengan "master" (Untuk saat ini, posisi adalah cabang "master"). Ketikkan ini pada terminal:
 ```
 $ git merge bagian-1
 ```
- Hasil adalah sebagai berikut.
+ 
+ Sedangkan untuk three-way merge, contohnya terjadi jika kita ingin menggabungkan cabang "bagian-2" dengan cabang "bagian-1". Posisikan kita di cabang bagian satu dengan perintah "checkout", lalu ketik ini pada terminal.
+ ```
+ $ git merge bagian-2
+ ```
+ Maka bagian-1 dan bagian-2 akan tergabung.
 
 <p>&nbsp;</p>
 
