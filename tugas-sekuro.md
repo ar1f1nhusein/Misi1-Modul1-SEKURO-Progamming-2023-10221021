@@ -113,7 +113,7 @@ $ git checkout <bagian-1>
 Maka cabang akan berpindah, dan jika kita lalu melihat seluruh cabang, maka hasilnya seperti berikut.
 ![Screen Shot 2022-02-11 at 14 27 28](https://user-images.githubusercontent.com/99285819/153552367-2323e95f-f1db-4e2f-9f8b-7620452d2652.png)
 
-- Pointer akan berubah tanda dari "master" ke "bagian-2" karena kita sudah berpindah branch. Lakukan cara yang sama untuk kembali ke cabang utama.
+- Pointer akan berubah tanda dari "master" ke "bagian-1" karena kita sudah berpindah branch. Lakukan cara yang sama untuk kembali ke cabang utama.
 
 Lalu, untuk menggabung merge, kita memiliki dua cara yaitu fast forward dan three-way merge. Fast forward dapat terjadi apabila cabang tersebut memiliki jalur langsung dengan cabang yang ingin digabungkan. Sedangkan three-way merge dapat terjadi jika cabang tersebut tidak memiliki jalur langsung dengan cabang yang ingin digabungkan.
 
