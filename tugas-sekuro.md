@@ -184,11 +184,55 @@ Contoh merge fast forward dapat terjadi antara cabang "bagian-1" dengan "master"
 $ git merge bagian-1
 ```
  
- Sedangkan untuk three-way merge, contohnya terjadi jika kita ingin menggabungkan cabang "bagian-2" dengan cabang "bagian-1". Posisikan kita di cabang bagian satu dengan perintah "checkout", lalu ketik ini pada terminal.
+ Sedangkan untuk three-way merge, contohnya terjadi jika kita ingin menggabungkan cabang "bagian-2" dengan cabang hasil gabungan tadi. Posisikan kita di cabang bagian satu dengan perintah "checkout", lalu ketik ini pada terminal.
  ```
  $ git merge bagian-2
  ```
- Maka bagian-1 dan bagian-2 akan tergabung.
+ Maka bagian-2 akan tergabung.
+
+ Selanjutnya, jika kita ingin mengetahui cabang mana saja yang sudah terhubung dengan cabang yang aktif, maka gunakan perintah berikut.
+ ```
+ $ git branch --merged
+ ```
+Contoh hasilnya sebagai berikut ini.
+![Screen Shot 2022-02-11 at 19 43 49](https://user-images.githubusercontent.com/99285819/153593559-c94747b4-b83f-433c-aeab-f30cfa6c0255.png)
+Itu menunjukkan nama-nama cabang yang sudah terhubung dengan cabang utama yang aktif (warna hijau).
+
+ Lalu, jika kalian ingin menghapus suatu cabang, maka gunakan perintah berikut.
+ ```
+ $ git -d <nama cabang>
+ ```
+ Jika menggunakan perintah tersebut, biasanya akan terdapat pertanyaan apakah cabang sudah digabungkan atau belum. Namun, jika ingin langsung dihapus, maka gunakan perintah berikut.
+ ```
+ $ git -D <nama cabang>
+ ```
+ Hasilnya sebagai berikut.
+ ![Screen Shot 2022-02-11 at 19 48 11](https://user-images.githubusercontent.com/99285819/153594149-f38d3807-f879-4ea7-9300-d4afc65d6911.png)
+
+ Terakhir, jika kalian ingin melihat visualisasi dari proyek kalian, maka gunakan perintah berikut.
+```
+$ git log --all -- decorate --oneline --graph
+```
+Hasilnya akan menjadi sebagai beriktut.
+![Screen Shot 2022-02-11 at 19 52 30](https://user-images.githubusercontent.com/99285819/153594722-af5857e2-ce25-4d70-9cdb-64ccdc4102ce.png)
+- Tanda garis-garis menunjukkan visualisasi dari perjalanan proyek kita, mirip dengan apa yang ditampilkan fitur "network" di github.
+
+Namun, mungkin saja cukup melelahkan menulis perintah sepanjang itu, maka kita dapat gunakan alias untuk menyingkatnya dengan perintah berikut.
+```
+$ alias <nama alias>=" git log --all -- decorate --oneline --graph"
+```
+Contohnya adalah:
+![Screen Shot 2022-02-11 at 20 00 27](https://user-images.githubusercontent.com/99285819/153595801-f85eedc2-6247-427e-b9ad-a5dfb6dba961.png)
+
+Lalu, keluarkan visualnya dengan perintah ini.
+```
+$ <nama alias>
+```
+Maka akan keluar tampilan sebagai berikut.
+![Screen Shot 2022-02-11 at 20 01 24](https://user-images.githubusercontent.com/99285819/153596005-33e290c6-7178-4176-9843-6712ee6e8d04.png)
+- Tampilan yang sama dengan sebelumnya
+
+
 
 <p>&nbsp;</p>
 
