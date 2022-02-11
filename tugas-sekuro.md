@@ -45,17 +45,17 @@ Git merupakan salah satu VCS (Visual Control System) yang tersedia pada komputer
 
 
 ## 2) Bekerja dengan Github
-Bekerja dengan sebuah github dapat dilakukan dengan langkah pertama yaitu sign in ke akun github di "https://github.com". Lalu, kita 
+Bekerja dengan sebuah github dapat dilakukan dengan langkah pertama yaitu sign in ke akun github di "https://github.com". Setelah itu, kita harus memberi nama dari repository terlebih dahulu. Lalu, kita dapat melakukan berbagai hal dengan website tersebut. Kita bisa mulai membuat file suatu proyek di repository yang kita buat, namun kita harus selalu "commit" setiap perubahan pada proyek atau repository yang kita lakukan dengan memberikan keterangan perubahan apa yang dilakukan, tujuannya adalah agar tidak membingungkan pemilik asli dari proyek tersebut. Kita bisa melihat commit yang dilakukan pada repository atau file tersebut berdasarkan fitur "history" atau "commits", dan di fitur "network" pada menu "insights" dapat memperlihatkan kita "commit" yang disimbolkan titik hitam pada proyek yang kita lakukan.
 
 <p>&nbsp;</p>
 
 ## 3) Github: Branch
-Pada dasarnya, branch merupakan sebuah cabang independen tempat kita melakukan suatu proyek. Namun, proyek tersebut tidak akan mengubah cabang di rantai utama. 
+Pada dasarnya, branch merupakan sebuah cabang independen tempat kita melakukan suatu proyek. Namun, proyek tersebut tidak akan mengubah cabang di rantai utama. Suatu repository selalu memiliki "main branch" atau cabang utama, dan dari cabang utama tersebut, dapat dibuat bercabang-cabang dengan nama yang berbeda, namun cabang-cabang tersebut tidak akan memengaruhi cabang utama. Cabang tersebut dapat kita katakan sebagai tempat mengerjakan proyek dari cabang utama, namun pada saat pengerjaan tidak akan mengubah proyek aslinya, mirip dengan duplikat. Namun, bila kita sudah yakin, maka kita bisa menggabungkannya ke cabang utama atau kita sebut sebagai "merge", ini akan memodifikasi proyek asli yang dimiliki. Branch dapat dilakukan dengan memilih pilihan "create new branch" sebelum melakukan "commit" dan memberi nama "commit" tersebut. Cabang yang sudah matang dapat kita "pull request" pada pemilik cabang utama, meskipun itu diri kita sendiri. Jika sudah, maka di cabang utama atau "branch master" akan ada pesan "pull request", dan dapat langsung di-"merge" jika disetujui. Namun, terkadang ada juga "merge conlict" karena adanya beberapa masalah saat merge, seperti misalnya penggantian baris yang sama oleh beberapa cabang, maka kita harus diselesaikan atau "resolve" terlebih dahulu untuk melakukannya. Jika sudah berhasil, maka di visualisasi pada fitur "network" akan terdapat cabang dari cabang utama, itu adalah bukti adanya cabang atau "branch" dari proyek atau cabang utama, dan jika ada gambar cabang bergabung, itu artinya sudah dilakukan "merge".
 
 <p>&nbsp;</p>
 
 ## 4) Github: Fork
-Pada dasarnya, fork adalah suatu tindakan menduplikasi suatu repository untuk kemudian kita edit. 
+Pada dasarnya, "fork" adalah suatu tindakan menduplikasi suatu repository milik akun lain untuk kemudian kita edit. 
 
 <p>&nbsp;</p>
 
@@ -102,8 +102,12 @@ Maka cabang akan berpindah, dan jika kita lalu melihat seluruh cabang, maka hasi
 
 Lalu, untuk menggabung merge, kita memiliki dua cara yaitu fast forward dan three-way merge. Fast forward dapat terjadi apabila cabang tersebut memiliki jalur langsung dengan cabang yang ingin digabungkan. Sedangkan three-way merge dapat terjadi jika cabang tersebut tidak memiliki jalur langsung dengan cabang yang ingin digabungkan.
 
-Contoh merge fast forward dapat terjadi antara cabang "bagian-1" dengan "master". Ketikkan 
-
+Contoh merge fast forward dapat terjadi antara cabang "bagian-1" dengan "master" (Untuk saat ini, posisi saat ini adalah "master"). Ketikkan ini pada terminal:
+```
+$ git merge bagian-1
+```
+ Hasil adalah sebagai berikut.
+ 
 <p>&nbsp;</p>
 
 ## 7) Gitignore
