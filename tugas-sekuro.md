@@ -88,12 +88,14 @@ $ git add <nama file>
 Setelah itu, jika dilihat lagi status dari folder, maka hasilnya sebagai berikut.
 ![Screen Shot 2022-02-11 at 18 01 03](https://user-images.githubusercontent.com/99285819/153580579-b8a9f705-6243-4fba-9054-77037984bdb0.png)
 Itu artinya file sudah berhasil dimasukkan ke staging area. 
+- Langkah yang sama harus dilakukan apabila kita memodifikasi suatu file dalam repository meskipun sudah di-track sebelumnya, ini disebabkan adanya perubahan yang harus di-add kembali.
 
 Selanjutnya, setiap perubahan pada folder harus dilakukan "commit". Untuk melakukan "commit", ketikkan berikut.
 ```
 $ git commit -m "<pesan commit>"
 ```
 Pesan commit harus ditambahkan untuk memberikan keterangan. Hasilnya adalah berikut.
+![Screen Shot 2022-02-11 at 18 26 21](https://user-images.githubusercontent.com/99285819/153583792-b55010d6-1f5b-4579-9e25-1b650e8ed574.png)
 
 <p>&nbsp;</p>
 
